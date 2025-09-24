@@ -4,11 +4,11 @@ A comprehensive collection of React icon components built with TypeScript and SV
 
 ## Installation
 
-\`\`\`bash
+```bash
 npm install @soluti0n/icons
 # or
 yarn add @soluti0n/icons
-\`\`\`
+```
 
 ## Features
 
@@ -21,7 +21,7 @@ yarn add @soluti0n/icons
 
 ## Quick Start
 
-\`\`\`tsx
+```tsx
 import { FilterIcon, FilterListIcon, FilterAltIcon } from '@soluti0n/icons';
 
 function App() {
@@ -33,7 +33,7 @@ function App() {
     </div>
   );
 }
-\`\`\`
+```
 
 ## Icon Props
 
@@ -63,16 +63,16 @@ All icons accept the following props:
 ## Usage Examples
 
 ### Basic Usage
-\`\`\`tsx
+```tsx
 import { FilterIcon } from '@soluti0n/icons';
 
 <FilterIcon />
 <FilterIcon size={32} />
 <FilterIcon color="#ff0000" />
-\`\`\`
+```
 
 ### With Custom Styling
-\`\`\`tsx
+```tsx
 <FilterIcon 
   size={40}
   color="white"
@@ -80,25 +80,25 @@ import { FilterIcon } from '@soluti0n/icons';
   className="my-icon-class"
   onClick={() => console.log('Icon clicked')}
 />
-\`\`\`
+```
 
 ### Filled vs Outline Variants
-\`\`\`tsx
+```tsx
 <FilterIcon filled={true} />      {/* Filled version */}
 <FilterIcon filled={false} />     {/* Outline version */}
 <FilterIcon />                    {/* Default: outline */}
-\`\`\`
+```
 
 ### Custom Stroke Width
-\`\`\`tsx
+```tsx
 <FilterIcon strokeWidth={2} />    {/* Thicker stroke */}
 <FilterIcon strokeWidth={0.5} />  {/* Thinner stroke */}
-\`\`\`
+```
 
 ## Advanced Usage
 
 ### Dynamic Icon Selection
-\`\`\`tsx
+```tsx
 import * as Icons from '@soluti0n/icons';
 
 const iconMap = {
@@ -111,10 +111,10 @@ function DynamicIcon({ name, ...props }) {
   const IconComponent = iconMap[name];
   return IconComponent ? <IconComponent {...props} /> : null;
 }
-\`\`\`
+```
 
 ### With CSS-in-JS
-\`\`\`tsx
+```tsx
 import styled from 'styled-components';
 import { FilterIcon } from '@soluti0n/icons';
 
@@ -126,7 +126,7 @@ const StyledIcon = styled(FilterIcon)\`
     color: #007bff;
   }
 \`;
-\`\`\`
+```
 
 ## Performance Tips
 
